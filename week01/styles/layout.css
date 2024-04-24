@@ -1,11 +1,15 @@
 body{
-    width: auto;
     display: grid;
+    grid-template-columns: 1fr;
+    width: auto; 
+    
 }
 
 header{
-    background-color: rgb(53, 53, 53);
-    height: 100px;   
+    grid-column: 1  / span 2;
+    grid-row: 1;
+    background-color: rgb(53, 53, 53);    
+    height: 100px;
 }
 
 header > div{
@@ -16,6 +20,8 @@ header > div{
 }
 
 nav{
+    grid-column: 1 / span 2;
+    grid-row: 2;
     background-color: black;
     list-style-type: none;
     text-align: center;
@@ -27,6 +33,7 @@ nav{
 nav ul{
     margin: 0;
 }
+
 nav li{
     font-family: 'Arial', sans-serif;
     display: inline-block;
@@ -34,12 +41,14 @@ nav li{
     margin-right: 50px;
     padding: 20px;
 }
+
 .mainbox{
-    display: flex;
-    align-items: stretch;
+    display: grid;
+
 }
 
-.mainbox > main{
+main{
+    grid-column: 1 / 3;
     background-color: rgb(206, 206, 206); 
     margin-top: 0px;     
     height: 355px;
@@ -47,10 +56,12 @@ nav li{
     color: rgb(78, 78, 78);
 }
 
-.mainbox > aside{
+aside{
+    grid-column: 3;
     margin-top: 0px;    
     height: 355px;
     flex-grow: 2;
+        
 }
 
 .mainbox #content, #aside{
@@ -61,6 +72,8 @@ nav li{
 }
 
 footer{
+    grid-column: 1 /span 2;
+    grid-row: 4;
     background-color: rgb(53, 53, 53);
     color: white;
     width: auto;
@@ -69,3 +82,4 @@ footer{
     font-size: 20px;
     padding: 10px;
 }
+
