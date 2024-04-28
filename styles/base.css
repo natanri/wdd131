@@ -215,3 +215,88 @@ footer p{
 }
 
 
+
+/* Screen width of 739px or less */
+@media (max-width: 739px) {
+    header h1 {
+        height: 80px;
+        font-size: 24px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px ;
+
+    }
+
+    nav {
+        display: block;
+    }
+
+    .mainbox {
+        grid-template-columns: auto;
+    }
+
+    .aboutme {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+    }
+
+    .aboutme img {
+        margin: 0 auto;
+    }
+
+    .description img {
+        padding: 30px 0;
+        margin: 0 auto;
+        grid-row: 3;        
+    }
+
+    .description img{
+        width: 600px;
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .description p {
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: auto;
+    }
+
+    .city p {
+        margin: 0 auto;
+        padding: 10px 20px;
+        width: auto;
+        text-align: center;
+    }
+
+    .flag img {
+        margin: 0 auto;
+    }
+
+    aside {
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    aside ul {
+        margin-top: 20px;
+    }
+
+    aside li{
+        display: inline-block;
+        padding: 10px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+}
+
