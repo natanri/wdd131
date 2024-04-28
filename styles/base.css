@@ -35,6 +35,7 @@ nav li {
     padding: 20px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;   
+    
 }
 
 nav a{
@@ -42,6 +43,13 @@ nav a{
     text-decoration: none;
     color: white;
 }
+
+a:hover {
+    color: #012e56;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
 .mainbox .city{
     height: 350px;
 }
