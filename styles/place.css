@@ -2,7 +2,7 @@
     --main-color: #ffcd00;
     --second-color:#003087;
     --third-color:#c8102e;
-    --char-color:black;
+    
 }
 @media (max-width: 500px){
     body{
