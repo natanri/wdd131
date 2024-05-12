@@ -16,13 +16,14 @@ body{
     align-items: center;   
 }
 
-h2{
-    color: var(--char-color);
-}
 
 @media (min-width: 501px){
     .country .image-small{        
         display: none;
+    }
+    
+    h2{
+        color: var(--char-color);
     }
 
     h1{
