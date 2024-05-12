@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Jhonatan Rios">
+    <meta name="description" content="Media query, place or country">
+    <title>WDD 131 - </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">    
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">  
+    
+</head>
+<body>
+    <div class="container">
+        <header class="country">
+            <h1>Colombia</h1>
+            <img class="image-small" src="images/Tequendama.webp" alt="Salto del Tequendama">        
+            <img class="image-large" src="images/pexels-clive-kim-2523249-4150119.webp" alt="Medellin">
+        </header>
+        <main >
+            <section class="g-data">
+                <h2>Data</h2>
+                <div class="g-info">
+                    <label for="area">Area: </label>
+                    <input type="text" id="area" value="1.141.748 sq Km"><br>
+    
+                    <label for="Population">Population: </label>
+                    <input type="text" id="Population" value="51.609.000"><br>
+    
+                    <label for="Capital">Capital: </label>
+                    <input type="text" id="Capital" value="Bogota D.C"><br>
+    
+                    <label for="Languages">Languages: </label>
+                    <input type="text" id="Languages" value="Spanish + 65 more"><br>
+    
+                    <label for="Currency">Currency: </label>
+                    <input type="text" id="Currency" value="COP"><br>
+    
+                    <label for="Time_Zone">Time Zone: </label>
+                    <input type="text" id="Time_Zone" value="UTC-5"><br>
+    
+                    <label for="callaing_code">Callaing Code: </label>
+                    <input type="text" id="callaing_code" value="+57"><br>
+    
+                    <label for="internetTld">Internet TLD: </label>
+                    <input type="text" id="internetTld" value=".co">
+                </div>
+            </section>
+            <section class="w-data">
+                <h2>Weather</h2>
+                <img class="sun" src="images/sun_clound.svg" alt="sun and cloud" width="80">
+                <div class="w-info">                
+                    <label for="Temperature">Temperature: </label>
+                    <input type="text" id="Temperature" value=""><br>
+    
+                    <label for="Conditions">Conditions: </label>
+                    <input type="text" id="Conditions" value="Tropical Mountain Climate"><br>
+    
+                    <label for="Wind">Wind: </label>
+                    <input type="text" id="Wind" value=""><br>
+    
+                    <label for="wind_chill">Wind Chill: </label>
+                    <input type="text" id="wind_chill" value=""><br>
+    
+                </div>            
+            </section>
+        </main>
+
+    </div>
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i>  Jhonatan Rios, <i class="fa-solid fa-mug-hot"></i> Colombia
+        <p></p>
+        <p style="color: white;">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js"></script> 
+</body>
+</html>

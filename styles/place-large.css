@@ -1,0 +1,119 @@
+:root{
+    --main-color: #ffcd00;
+    --second-color:rgba(0,48,135, 0.8);
+    --third-color:#c8102e;
+    --char-color:white;
+}
+
+* {    
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    text-align: center; 
+    align-items: center;   
+}
+
+h2{
+    color: var(--char-color);
+}
+
+@media (min-width: 501px){
+    .country .image-small{        
+        display: none;
+    }
+
+    h1{
+        background-color: var(--main-color);                
+        padding: 5px;
+        margin: 0;
+        padding: 30px;
+        font-size: 3rem;
+    }
+
+    .country .image-large{
+        width: 100%;
+        margin-bottom: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    
+    .g-data,
+    .w-data{
+        position: absolute;
+        background-color: rgba(255,255,255, 0.4);
+        padding: 20px;
+    }
+    
+    .g-data{
+        top: 150px;
+        left: 50px;
+    }
+    
+    .w-data{
+        bottom: -250px;
+        right: 50px;
+    }
+
+    .g-data h2{
+        background-color: var(--second-color);        
+        padding: 20px;
+        margin-bottom: 10px;        
+    }
+
+    .g-info, .w-info{
+        text-align: right; 
+               
+    }
+
+    .w-data h2 {
+        background-color: var(--second-color);        
+        padding: 20px;
+        text-align: left;        
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    section h2{
+        margin-left: -40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }   
+
+    input{
+        background-color: rgba(255,255,255, 0.01);
+        border: none;
+        padding: 1px;
+    }
+
+    input:focus{
+        outline: none;
+        box-shadow: 0 0 3px rgba(0,0,0, 0.5);
+    }
+
+    .w-data .sun::after{
+        content:"";
+        display:inline-block;
+        width:50px;
+        height:50px;        
+        background-size: cover;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    
+    footer{
+        background-color: var(--third-color);
+        padding: 10px;  
+        text-align:center;           
+        color: white;    
+        height: 70px;    
+        font-weight: 20;
+    }
+    
+}
