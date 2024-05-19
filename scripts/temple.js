@@ -5,9 +5,9 @@ year.innerHTML = ` ${today.getFullYear()}`;
 const lastModifiedElement = document.querySelector("#lastModified");
 lastModifiedElement.textContent = `${today.toLocaleString()}`
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
+    
+
     const menuToggle = document.querySelector( '.menu-toggle' );
     const menuCheckbox = document.getElementById('menu-toggle-checkbox');
     

@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .menu-toggle{
         display: block;
         cursor: pointer;      
@@ -76,13 +76,13 @@
         display: none;
     }
 
-    .menu-toggle span{
+    /*.menu-toggle span{
         display: block;
         width: 20px;
         height: 3px;
         background-color: #fff;
         margin: 10px 0;
-    }
+    }*/
 
     .menu {
         list-style-type: none;
@@ -124,44 +124,14 @@
         margin-bottom: 20px;
     }
 
-    span{
-        display: none;
+    section img{
+        width: 80%;   
+        height: auto; 
+        box-shadow: 4px 4px 15px 4px; 
+        margin-top: 15px;   
     }
 
-  
-
-   
-
-
-
-    
-
-
-
-
-
- 
-
- 
-       
- 
-    
-
-    
-
-    
- 
-    
- 
-    
-
-    
-   
-    
-
-    
-
-    
+        
 }
 
 

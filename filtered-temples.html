@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Jhonatan Rios">
+    <meta name="description" content="Media query learning activity example filtered page">
+    <title>WDD 131 - Picture Album Enhancement</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">     
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">   
+    <script src="scripts/filtered-temple.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>Temples Album</h1>
+        <nav>
+            <div class="menu-toggle">
+                <input type="checkbox" id="menu-toggle-checkbox">
+                <label for="menu-toggle-checkbox" class="menu-icon" aria-label="Toggle menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>                    
+                </label>
+                <ul class="menu">   
+                    <li ><a href="" id="x-close">X</a></li>                 
+                    <li><a href="filtered-temples.html">Home</a></li>
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
+                </ul>                
+            </div>
+        </nav>      
+</header>
+    <main>
+        <h1>Home</h1>
+        <figure class="container"></figure>        
+    </main>
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i>  Jhonatan Rios, <i class="fa-solid fa-mug-hot"></i> Colombia
+        <p style="color: yellow;">Last Modification: <span id="lastModified"></span></p>
+    </footer>      
+</body>
+</html>
