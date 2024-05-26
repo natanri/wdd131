@@ -79,9 +79,7 @@ footer{
     #menu-toggle-checkbox{
         display: none;
     }
-    span{
-        display: none;
-    }
+
 } 
 
 @media (min-width: 800px){

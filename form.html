@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author"  content="Jhonatan Rios">
+        <meta name="description" content="Form activity">
+        <title>WDD 131 - Form</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">    
+        <link rel="stylesheet" href="styles/form-large.css">
+        <link rel="stylesheet" href="styles/form.css">        
+    </head>
+<body>
+    <header class="product">
+        <h1>Product Review</h1>
+    </header>
+        <form action="review.html" method="get">        
+            <div class="product-select">
+                <label for="product-select">Product Name</label> <br>          
+                <select name="product-name" id="product-select" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                </select><br>
+            </div>   
+            <div><label>Overall Rating</label><br></div>     
+            <div class="stars">                
+                <input type="radio" id="fivestars" name="rating" value="5" required><label for="fivestars" aria-label="Toggle menu"></label>
+                <input type="radio" id="fourstars" name="rating" value="4" required><label for="fourstars" aria-label="Toggle menu"></label>
+                <input type="radio" id="threestars" name="rating" value="3" required><label for="threestars" aria-label="Toggle menu"></label>
+                <input type="radio" id="twostars" name="rating" value="2" required><label for="twostars" aria-label="Toggle menu"></label>
+                <input type="radio" id="onestars" name="rating" value="1" required><label for="onestars" aria-label="Toggle menu"></label>            
+            </div>
+    
+            <div class="date">
+                <label for="date-install">Date of Installation</label><br>   
+                <input type="date" id="date-install" name="date-install" required>
+            </div>
+    
+            <div class="checkbox-body">
+                <label>Which features did you find useful in the product?<br><i>(Check all apply)</i></label><br>
+                <input type="checkbox" id="check-1" class="checkbox" name="feature" value="Durability">
+                <label for="check-1">Durability</label><br>
+                <input type="checkbox" id="check-2" class="checkbox" name="feature" value="ease of use">
+                <label for="check-2">Ease of Use</label><br>
+                <input type="checkbox" id="check-3" class="checkbox" name="feature" value="Performance">
+                <label for="check-3">Performance</label><br>
+                <input type="checkbox" id="check-4" class="checkbox" name="feature" value="Design">
+                <label for="check-4">Design</label>
+            </div>
+    
+            <div class="text-body">
+                <label for="texto">Written Review <i style="color: #000094;">(Optional)</i></label><br>
+                <textarea name="text" id="texto" cols="60" rows="6"></textarea>
+            </div>
+    
+            <div class="firstName">
+                <label for="firstName">Your Name <i style="color: #000094;">(Optional)</i></label><br>
+                <input type="text" id="firstName">
+            </div> 
+            
+            <div class="btn">
+                <input type="submit" value="Post Review" id="btn">
+            </div>        
+        </form>    
+        
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i>  Jhonatan Rios, <i class="fa-solid fa-mug-hot"></i> Colombia
+        <p></p>
+        <p style="color: yellow;">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

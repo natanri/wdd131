@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;   
+}
+
+@media (min-width: 500px){
+
+    body{        
+        margin: 0 auto;
+        max-width: 650px;
+        padding: 15px;
+        font-family: "Roboto", sans-serif;
+    }
+ 
+    header{
+     background-color: #604ab1;
+     padding: 5px;
+     margin-bottom: 15px;
+     color: white;
+     text-align: center;
+    }
+ 
+    form{
+     background-color: rgb(153, 140, 167);
+     padding: 12px; 
+     border-radius: 5px;   
+    }
+ 
+    select{
+     width: 100%;
+     padding: 10px;
+    }
+ 
+    div{
+     margin: 2%;
+     margin-top: 4%;
+    }
+  
+ /* use reverse flexbox to take advantage of flex-direction: reverse */
+ .stars {
+     display: flex;
+     align-items: center;
+     width: 360px;
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     margin: 10px auto;
+     position: relative;
+   }
+   /* hide the inputs */
+   .stars input {
+     display: none;
+   }
+   /* set properties of all labels */
+   .stars > label {
+     width: 30px;
+     height: 30px;
+     font-family: Arial;
+     font-size: 30px;
+     transition: 0.2s ease;
+     color: orange;
+     cursor: pointer;
+     position: relative;
+   }
+   /* give label a hover state */
+   .stars label:hover, .stars label:hover ~ label{
+     color: #FFFFFF;
+     transition: 0.2s ease;
+   }
+   .stars label:active::before {
+     transform:scale(1.1);
+   }
+   
+   /* set shape of unselected label */
+   .stars label::before {
+     content: '\2606';
+     position: absolute;
+     top: 0px;
+     left: 0;
+     line-height: 26px;
+   }
+   /* set full star shape for checked label and those that come after it */
+   .stars input:checked ~ label::before, .stars input:checked ~ label ~ label::before{
+     content:'\2605';
+   }
+   
+   @-moz-document url-prefix() {
+     .stars input:checked ~ label:before, .stars input:checked ~ label ~ label::before {
+     font-size: 36px;
+     line-height: 21px;
+     }
+   } 
+   
+   #date-install{
+     width: 100%;
+     margin-bottom: 5px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+   }
+ 
+   input[type=checkbox]{
+     margin-left: 10px;
+   }
+ 
+   .checkbox{
+     width: 20px;
+     height: 20px;
+   }
+ 
+   .checkbox-body{    
+     text-align:left;
+   }
+ 
+   .checkbox-body  label{
+     text-align: center;
+   }
+ 
+   #firstName{
+     width: 100%;
+     padding-top: 10px;
+     padding-bottom: 10px;
+   }
+ 
+   .btn{
+     width: 100%;
+   }
+   #btn{ 
+     width: 98%;   
+     padding: 10px;
+     font-size: 1rem;
+     margin-right: 0;
+   }
+ 
+   footer{
+     background-color: #604ab1;
+     padding: 10px;  
+     text-align:center;   
+     margin-top: 15px;
+     color: white;    
+     height: 70px;    
+     font-weight: 20;
+   }
+ }
