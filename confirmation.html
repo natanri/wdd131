@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header class="product">
+        <h1>Product Review</h1>
+    </header>
+    <div class="confirmation-message">
+        <h1>Your review has been submitted</h1>
+        <p>Thank you for your time taking this survey</p>
+    </div>
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i> Jhonatan Rios |<i class="fa-solid fa-mug-hot"></i> Bogotá, Colombia
+        <p></p>
+        <p style="color: yellow;">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>
