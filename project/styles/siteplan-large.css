@@ -1,0 +1,58 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Body text */
+body {
+    margin: 0 auto;
+    max-width: 750px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333; /* Dark Grey */
+    background-color: #F0F0F0; /* Light Grey */
+    line-height: 1.6;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #B22222; /* Dark Red */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Links */
+a {
+    color: #E63946; /* Red */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B22222; /* Dark Red */
+}
+
+/* Buttons */
+button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E63946; /* Red */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B22222; /* Dark Red */
+}
+
+li{
+    border-radius: 5px;
+    list-style-type: none;
+}
+
