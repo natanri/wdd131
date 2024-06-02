@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Jhonatan Rios">
+    <meta name="description" content="Form activity">
+    <title>WDD 131 - Project Gemini - Jhonatan Rios</title>
+    <link rel="shortcut icon" href="images/favicon.JPG">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">    
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body>
+    <header class="product">
+        <h1>Form submitted</h1>
+        <nav>
+            <ul>                
+                <li><a href="e-portfolio.html" target="_blank">Home</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>                                
+                <li><a href="contact-me.html" target="_blank">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/jhonatan-rios/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="confirmation-message">
+        <h1>Your message has been submitted</h1>
+        <p>Thank you for your time, we will be in touch </p>
+    </div>
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i> Jhonatan Rios |<i class="fa-solid fa-mug-hot"></i> Bogotá, Colombia
+        <p></p>
+        <p style="color: #FFFFFF;">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>

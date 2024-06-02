@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Jhonatan Rios">
+    <meta name="description"
+        content="WDD 131 - Project Gemini, Jhonatan Rios">
+    <title>WDD 131 - Project Gemini - Jhonatan Rios</title>
+    <link rel="shortcut icon" href="images/favicon.JPG">
+    <link rel="stylesheet" href="styles/portfolio-large.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <script src="https://kit.fontawesome.com/b6da81f85a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="e-portfolio.html" target="_blank">Home</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>                                
+                <li><a href="contact-me.html" target="_blank">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/jhonatan-rios/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form action="confirmation.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy;<span id="currentyear"></span> <i class="fa-solid fa-mug-hot"></i>  Jhonatan Rios <i class="fa-solid fa-mug-hot"></i> Colombia
+        <p></p>
+        <p style="color: #FFFFFF;">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdata.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-background: #F0F0F0;
+    --H-F-background:#B22222;
+    --Buttons-links:#E63946;
+    --char-color:#FFFFFF;
+    --border-lines:#F5A9A9;
+    --primary-text: #333333;
+    --primary-font: 'Roboto', sans-serif;
+    --secundary-font: 'Lato', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+    header nav li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+    }  
+
+    .aboutme p,    
+    .skills p, .aboutme .imgjr,
+    .perception img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .aboutme .imgjr{
+        order: 2;
+        width: 50%;
+        border-radius: 20px 100px;
+       
+    }
+
+    .aboutme p {
+        order: 1;
+    }
+
+    .aboutme h2{
+        text-align: center;
+        background-color: var(--H-F-background);
+        padding: 24px;  
+        border-radius: 20px 0 20px 0;    
+        text-align:center;   
+        margin: 0px;
+        color: white;
+        font-family: var(--primary-font);
+        font-weight: 40px;    
+    }    
+
+    .skills {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .perception img{
+        width: 50%;
+        margin-top: 50px;
+    }
+
+
+    .mainbox {
+        grid-template-columns: 1fr;
+    }
+
+    .samples {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .description {
+        margin: 20px 0;
+    }
+}
+
